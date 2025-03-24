@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ds-ai-intern-assignments"
+version = "0.1.0"
+description = "Data science and AI internship assignments"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+ruff = "^0.11.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+multi_line_output = 3
+
+[tool.ruff]
+line-length = 120
+exclude = ["*.ipynb"]
