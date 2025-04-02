@@ -42,7 +42,8 @@
 - Performing grid search.
 - Interpreting the results.
 
- - dataset for data exploration and creation ml models  https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
+
+ dataset for data exploration and creation ml models  https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
 
 
 [course link: https://mlcourse.ai/book/index.html]
