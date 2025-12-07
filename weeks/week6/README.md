@@ -1,37 +1,40 @@
 ## Week 6: Local Models & Fine-tuning
 
 ### Running Local LLMs
-- Introduction to open-source LLMs (Llama)
+- Introduction to open-source/open-weight LLMs (e.g. Llama/Qwen/Mistral/Olmo/Phi)
 - Model weights and formats (GGUF, Safetensors)
+- Small and Efficient Models
 - Quantization concepts and tradeoffs
-- Setting up llama.cpp for local inference
-- Using Hugging Face Transformers for local inference
-- Local model servers (vLLM, Ollama)
+- Local inference solutions (e.g. llama.cpp, vLLM, Ollama, HF Transformers)
 - Performance optimization for local deployment
 - Comparing local models vs. API-based models
 
 ### Fine-tuning LLMs
 - When and why to fine-tune
-- Parameter-efficient fine-tuning (PEFT) methods
-- LoRA and QLoRA techniques
+- Parameter-efficient fine-tuning (PEFT) methods (LoRA, QLoRA)
 - Instruction tuning with public datasets
 - Evaluating fine-tuned models
 - Maintaining alignment during fine-tuning
 - Deploying fine-tuned models
 
 ### Datasets
-- [financial sentiment](https://huggingface.co/datasets/takala/financial_phrasebank)
-- [SAMSum](https://huggingface.co/datasets/Samsung/samsum)
+- [Financial PhraseBank - Sentiment classification](https://huggingface.co/datasets/takala/financial_phrasebank)
+- [SAMSum - Conversation summarization](https://huggingface.co/datasets/Samsung/samsum)
 
 ### Theory, Courses & Additional Reading
 - [paper: LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/pdf/2302.13971)
 - [paper: Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/pdf/2307.09288)
+- [paper: Mixtral of Experts](https://arxiv.org/abs/2401.04088)
 - [paper: The Case for 4-bit Precision: k-bit Inference Scaling Laws](https://arxiv.org/pdf/2212.09720)
 - [paper: Scaling Instruction-Finetuned Language Models](https://arxiv.org/pdf/2210.11416)
 - [paper: LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/pdf/2106.09685)
 - [paper: QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/pdf/2305.14314)
+- [PEFT](https://huggingface.co/docs/peft/index)
+- [Unsloth](https://docs.unsloth.ai/)
 - [course: Open Source Models with Hugging Face](https://www.deeplearning.ai/short-courses/open-source-models-hugging-face/)
 - [course: Prompt Engineering with Llama 2 & 3](https://www.deeplearning.ai/short-courses/prompt-engineering-with-llama-2/)
+- [course: Quantization Fundamentals with Hugging Face](https://www.deeplearning.ai/short-courses/quantization-fundamentals-with-hugging-face/)
+- [course: Quantization in Depth](https://www.deeplearning.ai/short-courses/quantization-in-depth/)
 - [course: Finetuning Large Language Models](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/)
 - [course: Fine-tune Large Language Models](https://huggingface.co/learn/nlp-course/chapter11)
 
@@ -42,11 +45,11 @@ Specific Task:  Set up and explore a local LLM for inference
 
 Deliverables:
 
-- Working installation of llama.cpp with LLama 3 Instruct model
+- Working installation of llama.cpp or ollama with a small LLM (e.g. Qwen3-0.6B)
 - Basic benchmarking at one or two quantization levels
 - Simple web UI for interacting with the model
 
-Success Criteria: Successfully run the model locally and generate coherent responses, with documentation of generation speed
+Success Criteria: Successfully run the model locally and generate coherent responses, with documentation of generation speed and memory consumption
 
 **Assignment 2: Fine-tuning with LoRA**
 

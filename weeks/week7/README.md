@@ -1,43 +1,35 @@
-## Week 7: RAG & AI Agents
+## Week 7: Retrieval-Augmented Generation (RAG)
 
 ### Retrieval-Augmented Generation
 - Vector databases and embeddings (Chroma, Pinecone, FAISS)
 - Building RAG systems with public knowledge bases
 - Chunking strategies for effective retrieval
+- Retrieval strategies (query transformation, reranking, HyDE)
 - Hybrid search approaches
-- Evaluating RAG system performance
 - Advanced RAG architectures
 - Production considerations for RAG systems
 
-### AI Agents Fundamentals
-- Introduction to the agent paradigm
-- ReAct (Reasoning + Acting) pattern
-- Tool use and function calling with LLMs
-- Planning and decomposition strategies
-- Implementing memory for agents
-- Multi-agent systems
-- Agent frameworks overview (LangGraph, CrewAI)
-- Integrating RAG with agents
+### RAG Evaluation
+- Evaluation dimensions (retrieval, generation, end-to-end)
+- Evaluation frameworks (RAGAS, DeepEval, Promptfoo, Arize Phoenix)
+- Key metrics (Context precision/recall, context relevance, faithfulness, answer relevance)
 
 ### Datasets
 - [Simple English Wikipedia](https://huggingface.co/datasets/wikipedia)
-- [HotpotQA](https://huggingface.co/datasets/hotpot_qa)
 
 ### Theory, Courses & Additional Reading
 - [paper: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/pdf/2005.11401)
 - [paper: Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/pdf/2004.04906)
-- [paper: ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629)
-- [paper: Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442)
+- [paper: Corrective Retrieval Augmented Generation](https://arxiv.org/abs/2401.15884)
+- [paper: From Local to Global: A Graph RAG Approach to Query-Focused Summarization](https://arxiv.org/abs/2404.16130)
+- [DeepEval](https://deepeval.com/docs/getting-started)
+- [RAGAS](https://docs.ragas.io/en/latest/)
 - [course: Embedding Models: From Architecture to Implementation](https://www.deeplearning.ai/short-courses/embedding-models-from-architecture-to-implementation/)
 - [course: Retrieval Optimization: From Tokenization to Vector Quantization](https://www.deeplearning.ai/short-courses/retrieval-optimization-from-tokenization-to-vector-quantization/)
 - [course: Vector Databases: from Embeddings to Applications](https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/)
 - [course: Building Applications with Vector Databases](https://www.deeplearning.ai/short-courses/building-applications-vector-databases/)
 - [course: Building and Evaluating Advanced RAG Applications](https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/)
-- [course: Welcome to the 🤗 AI Agents Course - Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)
-- [course: AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/)
-- [course: Building Agentic RAG with LlamaIndex](https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/)
-- [course: Multi AI Agent Systems with crewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
-- [course: AI Agentic Design Patterns with AutoGen](https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/)
+- [course: Knowledge Graphs for RAG](https://www.deeplearning.ai/short-courses/knowledge-graphs-rag/)
 
 ### Assignments
 **Assignment 1: Comprehensive RAG System**
@@ -53,15 +45,15 @@ Deliverables:
 
 Success Criteria: System successfully retrieves relevant context and generates reasonable answers
 
-**Assignment 2: Task Completion Agent**
+**Assignment 2: RAG Evaluation Pipeline**
 
-Specific Task: Enhance the RAG system with agent capabilities
+Specific Task: Build an evaluation framework for your RAG system
 
 Deliverables:
 
-- Build upon the previous RAG implementation
-- Add 2-3 basic tools (e.g., router, search query refinement, calculator)
-- Implement a basic reasoning step before generating answers
-- Create a simple way to log the agent's steps
+- Evaluation dataset: 10+ question-answer pairs for your corpus
+- Implement evaluation metrics: RAG Triad, Recall@k, NDCG
+- Compare different RAG configurations (embeddings / chunk size, etc.)
+- Evaluation report: recommendations for optimal configuration
 
-Success Criteria: Successfully use tools to enhance answers when appropriate
+Success Criteria: Comprehensive evaluation across multiple dimensions
