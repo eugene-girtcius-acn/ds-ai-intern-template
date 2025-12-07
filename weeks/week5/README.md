@@ -4,9 +4,11 @@
 - Evolution of language models
 - Transformer architecture fundamentals
 - Understanding context windows, tokens, and model capabilities
+- Reasoning models
+- Multimodal models
 
 ### Working with LLM APIs
-- OpenAI API integration (GPT models)
+- API integration (OpenAI/Anthropic/Google)
 - Structured API requests and response handling
 - Understanding and managing model parameters (temperature, top_p, max_tokens)
 - Implementing streaming responses
@@ -15,9 +17,10 @@
 
 ### Prompt Engineering Fundamentals
 - Basic prompting techniques
-- Few-shot prompting
-- Chain-of-thought prompting
+- Zero-shot vs few-shot prompting
+- Chain-of-thought (CoT) prompting
 - Using system messages effectively
+- Role prompting and persona design
 - Prompt templates and management
 
 ### Datasets
@@ -36,6 +39,7 @@ No dataset is required for this week, but if you'd like an example, you can use 
 - [course: ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 - [course: Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
 - [course: Building Generative AI Applications with Gradio](https://www.deeplearning.ai/short-courses/building-generative-ai-applications-with-gradio/)
+- [course: Pydantic for LLM Workflows](https://www.deeplearning.ai/short-courses/pydantic-for-llm-workflows/)
 
 ### Assignments
 **Assignment 1: Multi LLM API Integration**
@@ -44,9 +48,10 @@ Specific Task: Create a comparison tool for multiple LLMs
 
 Deliverables:
 
-- Python module with standardized interfaces for OpenAI (pick any 2 models)
+- Python module with standardized interfaces for any porvider, e.g. OpenAI (pick any 2 models)
 - Proper error handling, retry logic, and streaming support
 - Simple web interface allowing side-by-side comparison of responses (streamlit or gradio)
+- Support for structured outputs
 
 Success Criteria: Successfully handle 10 test queries across all models with proper error handling
   
